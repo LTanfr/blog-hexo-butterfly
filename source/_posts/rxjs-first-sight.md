@@ -3,9 +3,10 @@ title: 初见 RxJS
 date: 2022-05-06 15:10:16
 updated:
 tags: 
-  - JavaScript 
   - RxJS
-categories: 前端
+categories: 
+  - 前端
+  - RxJS
 keywords:
 description:
 top_img:
@@ -42,7 +43,7 @@ aside:
 
 观察者模式在程序设计中并不少见，如`DOM`操作中的通过给`DOM`元素绑定相应的事件去监听该`DOM`元素的相应行为（如鼠标点击、滑动等），并在该行为触发时执行对应的事件；或是大名鼎鼎的`Redux`的实现，其都是以观察者模式的思想为核心。
 
-```jsx
+```js
 // redux 的简单实现
 export const createStore = (reducer) => {
   // 公共状态
@@ -73,13 +74,13 @@ export const createStore = (reducer) => {
 
 `iterator`（迭代器）的概念实际上也并不陌生，ES6中也加入了原生的iterator接口，如`Array`、`Map`、`Set`、`String`等JS中内置的数据结构都实现了该接口。实现`iterator`接口的方法是为其添加`Symbol.iterator`属性，其中包含`next`方法，该方法返回的迭代器对象包含两个属性：`value`和`done`。`done`指的是遍历是否结束，`value`为下一次迭代的值，`done`为`true`时`value`一般为`undefined`。
 
-```jsx
+```js
 const iterableExample = {
 	[Symbol.iterator]: function() {
 		return {
 			next: function() {
 				return {
-					value: 'Sunday'，
+					value: 'Sunday',
 					done: true
 				}
 			}
@@ -104,7 +105,7 @@ iterator.next() // {value: 'Wednesday', done: false}
 
 创建`Observable`实例的基本方法,使用`Observable`构造函数来创建一个`Observable`实例对象，其中可以传入一个回调函数,接收一个`subscriber`，用来指定该如何处理数据。需要注意的是，`Observable`作为被观察的对象，需要使用`subscribe`方法来通知`subscriber`去对`Observable`作出处理。
 
-```jsx
+```js
 import { Observable } from 'rxjs';
 
 let observalbe1 = new Observable((subscriber) => {
@@ -139,7 +140,7 @@ observalbe2.subscribe(console.log);
 - `complete`：在`Observable`中完成遍历即调用其中的`complete`方法时，观察者的`complete`方法会被调用，在此之后的`next`方法不会执行。
 - `error`：在`Observable`中出现错误时，观察者的`error`方法会被调用。
 
-```jsx
+```js
 let observable3 = new Observable((subscriber) => {
   subscriber.next('Inuyasha');
   subscriber.next('Kikyo');
@@ -177,9 +178,9 @@ observable3.subscribe(observer);
 
 需要注意其参数与方法`Function.prototype.call`类似，需要为一连串的参数，而不直接是一个数组，处理的顺序为传入参数的顺序，下图来自rxjs官网。
 
-![of.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ec79fa46-8b7d-4e5c-bc52-99c29733f5c6/of.png)
+![of.png](https://rxjs.dev/assets/images/marble-diagrams/of.png)
 
-```jsx
+```js
 import { of } from 'rxjs';
 
 const source = of(1, 2, 3);
@@ -197,7 +198,7 @@ source.subscribe({
 
 该方法弥补了`of`方法不能直接传入数组等数据结构等缺陷，参数为`Array`、`类数组对象`、`Promise`、`可迭代对象`或`类 Observable 对象`
 
-```jsx
+```js
 import { from } from 'rxjs';
 
 const source = from([1, 2, 3]);
@@ -215,9 +216,9 @@ source.subscribe({
 
 这个方法能够实现JS中`setInterval`的功能，需要注意第一个参数是以`ms`为单位的时间间隔。
 
-![图片来自rxjs官网](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88a059b6-b771-4e22-a36d-2e4406d08b10/interval.png)
+![图片来自rxjs官网](https://rxjs.dev/assets/images/marble-diagrams/interval.png)
 
-```jsx
+```js
 import { interval } from 'rxjs';
 
 const numbers = interval(2000);
@@ -232,7 +233,7 @@ numbers.subscribe((n) => console.log(n));
 
 该方法与`Interval`类似，第一个参数指定间隔多少时间后调用，可以是数字，也可以是具体日期，第二个参数指定了第一次调用之后每次调用的时间间隔。
 
-```jsx
+```js
 import { timer } from 'rxjs';
 
 // 只传一个参数表示指需要调用一次
@@ -260,7 +261,7 @@ source2.subscribe({
 
 这两个`Observable`常量分别用来替代在以前版本的`empty`方法与`never`方法，前者会直接`complete`，后者不会被执行。
 
-```jsx
+```js
 import { EMPTY, NEVER } from 'rxjs';
 
 EMPTY.subscribe({
@@ -281,7 +282,7 @@ NEVER.subscribe(() => console.log('never be called'));
 
 该方法会直接抛出异常，与`Promise.reject`方法类似。
 
-```jsx
+```js
 import { throwError } from 'rxjs';
 
 throwError(() => console.log('Ops!')).subscribe();
@@ -291,7 +292,7 @@ throwError(() => console.log('Ops!')).subscribe();
 
 在对`Observable`进行`subscribe`之后，如果不进行释放，会一直占用资源，从而造成内存泄漏。为此，就跟`setTimeout`、`setInterval`等方法一样，需要我们在使用完后手动进行释放。
 
-```jsx
+```js
 import { interval } from 'rxjs';
 
 const source = interval(1000);
@@ -303,9 +304,9 @@ subscriptipn.unsubscribe();
 
 # 参考资料
 
-**30天精通RxJS**
+**[30天精通RxJS](https://blog.jerry-hong.com/series/rxjs)**
 
-**RxJS官方文档**
+**[RxJS官方文档](https://rxjs.dev/)**
 
 **ECMAScript 6 入门**
 

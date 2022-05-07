@@ -106,6 +106,8 @@ deploy:
   type: ''
 
 # DOUBAN
+## 更新数据 hexo douban
+## 需要在 hexo g 之后使用
 douban:
   user: 161350031
   builtin: false
@@ -128,3 +130,41 @@ douban:
     path: movies
     limit:
   timeout: 10000
+
+# BILIBILI
+## 更新数据 hexo bangumi -u
+## 需在 hexo g 之前使用
+bangumi:
+  enable: true
+  source: bili
+  path:
+  vmid: 75397250
+  title: '番剧'
+  quote: '生命不息，追番不止！'
+  show: 2
+  loading:
+  metaColor:
+  color:
+  webp:
+
+# LIVE2D
+live2d:
+  enable: true # 是否启动
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: ./source/live2d_models/live2d-widget-model-hijiki ## 模型文件
+  display:
+    position: left # 定位方向 left right top bottom
+    width: 150 # 小人宽度
+    height: 300 #  小人高度
+    hOffset: 15 # 向👇偏移
+    vOffset: -15 # 像👈偏移
+  mobile:
+    show: false # 手机端是否显示
+  react:
+    opacity: 1 # 模型透明度

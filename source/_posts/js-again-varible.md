@@ -3,14 +3,15 @@ title: 再学 JS 之变量
 date: 2022-05-05 14:02:00
 updated:
 tags: 
-  - JavaScript
   - 变量
-categories: 前端
+categories: 
+  - 前端
+  - JavaScript
 keywords:
 description:
 top_img:
 comments:
-cover:
+cover: /img/js-again.jpeg
 toc:
 toc_number:
 toc_style_simple:

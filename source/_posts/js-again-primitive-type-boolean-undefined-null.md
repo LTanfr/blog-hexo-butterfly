@@ -3,14 +3,15 @@ title: 再学 JS 之数据类型 —— boolean、undefined、null
 date: 2022-05-05 19:35:21
 updated:
 tags: 
-  - JavaScript
   - 数据类型
-categories: 前端
+categories: 
+  - 前端
+  - JavaScript
 keywords:
 description:
 top_img:
 comments:
-cover:
+cover: /img/js-again.jpeg
 toc:
 toc_number:
 toc_style_simple:
@@ -29,7 +30,7 @@ aside:
 
 原始类型中的`boolean`类型仅有两个值：`true`和`false`，即真与假。通常使用布尔类型的值来进行一些逻辑判断，需要注意的是其中常常会存在类型转换和逻辑运算符的使用。
 
-```jsx
+```js
 typeof true === 'boolean' // true
 
 // 逻辑运算符的使用与隐式类型转换
@@ -42,7 +43,7 @@ typeof !'false' === 'boolean' // true
 
 可以使用之前提到过的对象包装器`Boolean`将其他类型的值进行显示地转换为boolean的值，或者使用双重非（`!!`）。
 
-```jsx
+```js
 const bool1 = !!{x:100} // 将对象显式转换为boolean值
 const bool2 = Boolean('Yui') // 将字符串显式转换为boolean值
 // 使用new关键字时创建的是一个对象，而不是类型转换
@@ -59,7 +60,7 @@ typeof boolObj // 'object'
 
 因为对象的类型转换规则比较复杂，详细的规则会在之后讲到。
 
-```jsx
+```js
 // 一个涉及对象的隐式类型转换的例子
 [] == ![] // true
 ```
@@ -69,7 +70,7 @@ typeof boolObj // 'object'
 
 原始类型中的`undefined`只包含一个值：`undefined`，意为未被赋值。当使用`var`、`let`关键字声明变量而赋值时，变量的值就为`undefined`，同时也可以显示地给变量赋值为`undefined`（不建议这样做）。
 
-```jsx
+```js
 typeof undefined // 'undefined'
 
 let undefinedX
@@ -80,7 +81,7 @@ typeof undefinedX // 'undefined'
 
 null同样也只包含一个值：null，意为空值。需要注意的是使用typeof判断null的类型时会与期待的结果有所不同。
 
-```jsx
+```js
 typeof null // 'object'
 ```
 
@@ -92,7 +93,7 @@ typeof null // 'object'
 
 另外需要注意的是`undefined`在进行类型转换时与`null`的区别。
 
-```jsx
+```js
 // 涉及隐式类型转换
 // 关系运算符与相等运算符的规则不同
 // 在设计上关系运算符总会将运算元尝试转换为number，而相等运算符则没有这方面的考虑

@@ -2,9 +2,11 @@
 title: 再学 JS 之数据类型 —— object
 date: 2022-05-06 19:46:33
 tags: 
-  - JavaScript
   - 数据类型
-categories: 前端
+categories: 
+	- 前端
+  - JavaScript
+cover: /img/js-again.jpeg
 ---
 # object
 
@@ -14,7 +16,7 @@ categories: 前端
 
 创建一个对象有两种方式，一是通过构造函数来创建，二是通过字面量创建。
 
-```jsx
+```js
 const obj1 = new Object(); // 通过构造函数创建
 const obj2 = {}; // 通过字面量创建
 ```
@@ -23,7 +25,7 @@ const obj2 = {}; // 通过字面量创建
 
 属性是以键值对的形式存储在对象中，属性的值可以是任意的类型。注意要删除属性的时候需要用关键字`delete`。访问属性可以用`object.key`或是`object['key']`的形式。
 
-```jsx
+```js
 const user = {
 	name: 'Joe',
   age: '20',
@@ -52,7 +54,7 @@ user.introduce() // name: Joe, age: undefined
 
 再深入一点，`JavaScript`中内存空间分为栈与堆，先不讨论栈与堆在数据结构上的特性，只需知道变量都是放在栈中，对于原始类型来说，存放的就是实际的值；对于引用类型来说，存放的是指向实际对象值的地址。
 
-```jsx
+```js
 let a1 = 1
 let a2 = true
 let a3 = '#fff'
@@ -74,7 +76,7 @@ let a5 = null
 
 由于通过浅拷贝获取到的是同一个引用地址，所以使用相等运算符（`==`）和严格相等运算符（`===`）来与拷贝前的变量比较时是相等的。
 
-```jsx
+```js
 let a1 = {x:100}
 let a2 = a1
 a2 == a1 // true
@@ -83,7 +85,7 @@ a2 === a1 // true
 
 同时，通过浅拷贝获取的变量在修改原来的对象时，修改的是存在堆中的实际值，而存在栈中的引用地址并没有改变。也就是说，浅拷贝前的变量与浅拷贝后的变量实际指向的对象是同一个，无论哪一个变量去修改对象，另一个变量也能感知到变化。
 
-```jsx
+```js
 let obj1 = { x:100 }
 let obj2 = obj1
 obj2.x = 'yahaha'
@@ -102,14 +104,14 @@ obj1.x // 'yahaha'
 
 1. 判断传入参数为原始类型还是引用类型，如果是原始类型直接返回；如果是引用类型则继续进行下一步。
 
-```jsx
+```js
 // 暂时忽略 typeof value === 'function' 的情况
 const isObject = (value) => typeof value === 'object' && value !== null
 ```
 
 2. 判断引用类型具体是哪一子类型，根据子类型的特性来采取不同的拷贝方式。
 
-```jsx
+```js
 let result
 
 // 这里以数组和对象举例
@@ -120,7 +122,7 @@ result = isArray(value) ? [] : {}
 
 3. 通过递归的方式来拷贝其对象属性。
 
-```jsx
+```js
 // 数组和对象都可以用下列方式来进行递归拷贝
 for(let key in value) {
 	// 确保属性来自 value 本身而不是原型链
@@ -134,7 +136,7 @@ for(let key in value) {
 
 当然上述内容有很多不足，如没有考虑循环引用、每一种对象子类型、对象子类型是否可遍历等问题，光是这些细节就可以拿出来单独讲很久，这里只提供一个整体思路。完整的深拷贝学习可以参考`lodash`源码中`deepClone`部分。
 
-```jsx
+```js
 const isObject = (value) => typeof value === 'object' && value !== null;
 const isArray = (value) => Array.isArray(value);
 
@@ -158,7 +160,7 @@ const deepClone = (value) => {
 
 前面提到对象之间无法通过相等运算符或者严格相等运算符来进行比较。这里也提供一个大体的思路以供参考，同样地，完整的对象比较可以参考`lodash`源码的`eqDeep`部分。
 
-```jsx
+```js
 const isObj = (obj) => typeof obj === 'object' && obj !== null;
 function isEqual(obj1, obj2) {
   // 传入基本类型时直接进行比较
@@ -199,7 +201,7 @@ function isEqual(obj1, obj2) {
 
 下列哪种访问对象属性的方式是不正确的（对象属性的访问方式）
 
-```jsx
+```js
 const bird = {
   size: "small"
 };
@@ -217,7 +219,7 @@ const mouse = {
 
 代码输出结果(引用类型的存储方式、浅拷贝与深拷贝)
 
-```jsx
+```js
 let obj1 = {a: 100}
 let obj2 = obj1
 obj1.a = 200
@@ -226,7 +228,7 @@ console.log(obj2.a)
 
 代码输出结果(包装对象、类型转换)
 
-```jsx
+```js
 const a = 100;
 const b = new Number(100)
 console.log(a==b)
@@ -235,7 +237,7 @@ console.log(a===b)
 
 下列代码是否会报错(对象子类型)
 
-```jsx
+```js
 function test() {
 	console.log('test!')
 }

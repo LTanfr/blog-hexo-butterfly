@@ -3,14 +3,15 @@ title: 再学 JS 之数据类型 —— number
 date: 2022-05-05 16:35:21
 updated:
 tags: 
-  - JavaScript
   - 数据类型
-categories: 前端
+categories: 
+	- 前端
+  - JavaScript
 keywords:
 description:
 top_img:
 comments:
-cover:
+cover: /img/js-again.jpeg
 toc:
 toc_number:
 toc_style_simple:

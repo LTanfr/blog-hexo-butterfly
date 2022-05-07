@@ -3,14 +3,15 @@ title: 再学 JS 之数据类型 —— bigint、symbol
 date: 2022-05-06 10:20:04
 updated:
 tags: 
-  - JavaScript
   - 数据类型
-categories: 前端
+categories: 
+  - 前端
+  - JavaScript
 keywords:
 description:
 top_img:
 comments:
-cover:
+cover: /img/js-again.jpeg
 toc:
 toc_number:
 toc_style_simple:
@@ -34,7 +35,7 @@ aside:
 > `bigInt`类型不能和`number`类型的值进行混合运算，但可以转换为同一类型再进行运算；在进行类型转换时，不能像其他类型一样采用`+value`的形式来将`bigInt`类型的值转换为`number`类型，需使用`Number()`方法显式地进行转换；`BigInt`类型的值在转换为`number`类型的值时可能会丢失精度，建议在值可能大于`2^53`的情况下再使用 `bigInt`类型；同时`bigInt`类型的值不能使用`Math`对象的方法。
 > 
 
-```jsx
+```js
 typeof 4n === 'bigint'
 typeof BigInt(3) === 'bigint'
 // 与number类型的值可进行比较
@@ -58,13 +59,13 @@ Math.ceil(5n/2n) // Uncaught TypeError: Cannot convert a BigInt value to a numbe
 
 `symbol`类型只能通过调用`Symbol()`函数（不需要使用`new`关键字）来创建。该类型在ES6中被引入，它能够保证每个属性的名字都是独一无二的，这样就从根本上防止了属性名的冲突。
 
-```jsx
+```js
 typeof Symbol() === 'symbol'
 ```
 
 `Symbol`函数可以接收一个字符串作为参数，其作用是作为描述便于分辨。需要注意的是，由于`symbol`类型的值是独一无二的，所以就算是传入相同的字符串的`symbol`也不相等。
 
-```jsx
+```js
 const s1 = Symbol('foo')
 const s2 = Symbol('foo')
 
@@ -78,7 +79,7 @@ s1 === s2 // false
 
 ES6除了引入`symbol`这一基本类型以外，还提供了11个内置的`symbol`值，它们在语言内部使用，用于暴露语言内部的行为。比如`for...of`循环要求被循环的对象实现了`Symbol.iterator`这个接口，开发者可以通过这个属性自定义在遍历时的行为，在这里就不做过多的展开。
 
-```jsx
+```js
 // 以下代码为使用 Symbol.iterator 来实现指针结构
 
 class Node {
@@ -128,7 +129,7 @@ for (const n of one) {
 
 该方法会根据传入的`key`，在运行时的`全局symbol注册表`中去查找是否存在已经登记了相同`key`值的`symbol`，如果存在，则返回该`symbol`；反之则创建一个新的`symbol`，并将其登记到`全局symbol注册表`中去。这也是该方法与`Symbol`方法的区别，直接使用`Symbol`方法创建`symbol`类型的值不会被放到`全局symbol注册表`中。
 
-```jsx
+```js
 const s1 = Symbol.for('foo')
 const s2 = Symbol.for('foo')
 
@@ -139,7 +140,7 @@ s1 === s2 // true
 
 该方法需要传入一个`symbol`类型的参数，然后会根据传入的参数在`全局symbol注册表`中查找与该参数相关联的`key`值，并返回`key`值；如果没有找到，则返回`undefined`。
 
-```jsx
+```js
 let sym = Symbol();
 Symbol.keyFor(sym) // undefined
 
@@ -153,7 +154,7 @@ Symbol.keyFor(sym) // 'foo'
 
 魔法字符串指的是在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。如在团队开发中业务逻辑代码中直接使用字符串字面量就会使得代码难以维护。再如在React源码中，就有大量的symbol应用。
 
-```jsx
+```js
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
 const hasSymbol = typeof Symbol === 'function' && Symbol.for;
