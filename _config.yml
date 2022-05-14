@@ -122,7 +122,7 @@ douban:
     limit:
   movie:
     title: '映画'
-    quote: '参考的标准，已被上层建筑的水泥包裹'
+    quote: '无知不会幸福，安于无知才会'
     meta: true
     comments: true
     top_img:
