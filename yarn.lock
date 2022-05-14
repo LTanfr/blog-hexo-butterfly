@@ -289,12 +289,13 @@
   "resolved" "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
 
-"axios@^0.25.0":
-  "integrity" "sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g=="
-  "resolved" "https://registry.npmjs.org/axios/-/axios-0.25.0.tgz"
-  "version" "0.25.0"
+"axios@^0.27.0":
+  "integrity" "sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz"
+  "version" "0.27.2"
   dependencies:
-    "follow-redirects" "^1.14.7"
+    "follow-redirects" "^1.14.9"
+    "form-data" "^4.0.0"
 
 "babel-polyfill@6.23.0":
   "integrity" "sha1-g2TKYt+Or7gwSZ9pkXdGbDsDSZ0="
@@ -1208,12 +1209,12 @@
   dependencies:
     "jake" "^10.8.5"
 
-"ejs@3.1.6":
-  "integrity" "sha512-9lt9Zse4hPucPkoP7FHDF0LQAlGyF9JVpnClFLFH3aSSbxmyoqINRpp/9wePWJTUl4KOQwRL72Iw3InHPDkoGw=="
-  "resolved" "https://registry.npmjs.org/ejs/-/ejs-3.1.6.tgz"
-  "version" "3.1.6"
+"ejs@3.1.8":
+  "integrity" "sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ=="
+  "resolved" "https://registry.npmjs.org/ejs/-/ejs-3.1.8.tgz"
+  "version" "3.1.8"
   dependencies:
-    "jake" "^10.6.1"
+    "jake" "^10.8.5"
 
 "emoji-regex@^7.0.1":
   "integrity" "sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA=="
@@ -1494,7 +1495,7 @@
     "inherits" "^2.0.3"
     "readable-stream" "^2.3.6"
 
-"follow-redirects@^1.14.7":
+"follow-redirects@^1.14.9":
   "integrity" "sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.0.tgz"
   "version" "1.15.0"
@@ -1508,6 +1509,15 @@
   "integrity" "sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg=="
   "resolved" "https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz"
   "version" "3.0.1"
+  dependencies:
+    "asynckit" "^0.4.0"
+    "combined-stream" "^1.0.8"
+    "mime-types" "^2.1.12"
+
+"form-data@^4.0.0":
+  "integrity" "sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww=="
+  "resolved" "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz"
+  "version" "4.0.0"
   dependencies:
     "asynckit" "^0.4.0"
     "combined-stream" "^1.0.8"
@@ -1805,16 +1815,16 @@
   dependencies:
     "function-bind" "^1.1.1"
 
-"hexo-bilibili-bangumi@^1.7.4":
-  "integrity" "sha512-GFysQ3DG856A1QC7j0fK1vY1y1FtiOp6rBJo52AlLHiDPlO94RHIFVtsG5cqKWNON/+UH2uNdJrETuhszVwWDw=="
-  "resolved" "https://registry.npmjs.org/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.7.4.tgz"
-  "version" "1.7.4"
+"hexo-bilibili-bangumi@^1.7.5":
+  "integrity" "sha512-vOtIGWGTGxZohiGluQ31T+FhtlYSZNa31nzV55FVLwmZubr533Mopb/JLtr6+pBuXSNWdtshFZS+VZ84fgbstw=="
+  "resolved" "https://registry.npmjs.org/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.7.5.tgz"
+  "version" "1.7.5"
   dependencies:
     "@babel/runtime" "^7.15.3"
-    "axios" "^0.25.0"
+    "axios" "^0.27.0"
     "bangumi-data" "^0.3.81"
     "cheerio" "^1.0.0-rc.10"
-    "ejs" "3.1.6"
+    "ejs" "3.1.8"
     "hexo-fs" "^3.1.0"
     "hexo-i18n" "^1.0.0"
     "hexo-log" "^3.0.0"
@@ -2538,7 +2548,7 @@
   "resolved" "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
   "version" "3.0.1"
 
-"jake@^10.6.1", "jake@^10.8.5":
+"jake@^10.8.5":
   "integrity" "sha512-sVpxYeuAhWt0OTWITwT98oyV0GsXyMlXCF+3L1SuafBVUIr/uILGRB+NqwkzhgXKvoJpDIpQvqkUALgdmQsQxw=="
   "resolved" "https://registry.npmjs.org/jake/-/jake-10.8.5.tgz"
   "version" "10.8.5"
