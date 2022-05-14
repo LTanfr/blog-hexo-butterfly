@@ -168,3 +168,10 @@ live2d:
     show: false # 手机端是否显示
   react:
     opacity: 1 # 模型透明度
+
+# 私有 Repository 部署
+deploy:
+  type: git
+  repo: https://github.com/LTanfr/blog-hexo
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
