@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 丝圆
+title: 昨日的魔女
 subtitle: ''
 description: ''
 keywords:
@@ -112,8 +112,8 @@ douban:
   user: 161350031
   builtin: false
   book:
-    title: '书架'
-    quote: 'This is my book quote'
+    title: '书堆'
+    quote: '长眠于乞力马扎罗的豹子，无须解释'
     meta: true
     comments: true
     top_img:
@@ -121,8 +121,8 @@ douban:
     path: books
     limit:
   movie:
-    title: '电影角'
-    quote: 'This is my movie quote'
+    title: '映画'
+    quote: '参考的标准，已被上层建筑的水泥包裹'
     meta: true
     comments: true
     top_img:
@@ -140,7 +140,7 @@ bangumi:
   path:
   vmid: 75397250
   title: '番剧'
-  quote: '生命不息，追番不止！'
+  quote: '比起电锯人，更喜欢炎拳，大概就是这样'
   show: 2
   loading:
   metaColor:
