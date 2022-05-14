@@ -108,7 +108,7 @@ douban:
   builtin: false
   book:
     title: '书堆'
-    quote: '长眠于乞力马扎罗的豹子，无须解释'
+    quote: '长眠于乞力马扎罗的豹子，自杀的海明威'
     meta: true
     comments: true
     top_img:
@@ -167,6 +167,6 @@ live2d:
 # 私有 Repository 部署
 deploy:
   type: git
-  repo: https://github.com/LTanfr/blog-hexo
+  repo: https://github.com/LTanfr/blog-hexo-butterfly
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
