@@ -100,11 +100,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
-
 # DOUBAN
 ## 更新数据 hexo douban
 ## 需要在 hexo g 之后使用
