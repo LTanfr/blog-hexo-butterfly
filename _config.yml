@@ -164,7 +164,7 @@ live2d:
   react:
     opacity: 1 # 模型透明度
 
-# 私有 Repository 部署
+# Repository 部署
 deploy:
   type: git
   repo: https://github.com/LTanfr/blog-hexo-butterfly
