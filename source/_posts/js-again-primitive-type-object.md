@@ -6,7 +6,7 @@ tags:
 categories: 
 	- 前端
   - JavaScript
-cover: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/js-again.jpeg
+cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/js-again.jpeg
 ---
 # object
 

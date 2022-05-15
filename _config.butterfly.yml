@@ -91,10 +91,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/bg.JPG
+index_img: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/bg.JPG
+default_top_img: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
 
 # The banner image of archive page
 archive_img:
@@ -856,9 +856,9 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
   option:
-    main_css: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/css/index.css
-    main: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/js/main.js
-    utils: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/js/utils.js
+    main_css: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/index.css
+    main: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/main.js
+    utils: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/utils.js
     # translate:
     # local_search:
     # algolia_js:
