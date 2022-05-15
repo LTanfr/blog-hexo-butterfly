@@ -833,15 +833,14 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
-    # 星空背景
-    - <link rel="stylesheet" href="/css/universe.css">
+    # footer heartbeats
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+    # 星空背景
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/universe.css">
   bottom:
-    # - <script src="xxxx"></script>
     # 星空背景
     - <canvas id="universe"></canvas>
-    - <script defer src="/js/universe.js"></script>
+    - <script defer src="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/universe.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
