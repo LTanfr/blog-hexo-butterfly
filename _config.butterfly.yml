@@ -856,9 +856,9 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
   option:
-    # main_css:
-    # main:
-    # utils:
+    main_css: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/css/index.css
+    main: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/js/main.js
+    utils: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/js/utils.js
     # translate:
     # local_search:
     # algolia_js:
