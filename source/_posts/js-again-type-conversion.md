@@ -6,7 +6,7 @@ tags:
 categories: 
   - 前端
   - JavaScript
-cover: /img/js-again.jpeg
+cover: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/js-again.jpeg
 ---
 # 类型转换
 

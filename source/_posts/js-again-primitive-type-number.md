@@ -11,7 +11,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: /img/js-again.jpeg
+cover: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/js-again.jpeg
 toc:
 toc_number:
 toc_style_simple:
