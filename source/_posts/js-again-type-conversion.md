@@ -4,8 +4,7 @@ date: 2022-05-07 09:26:11
 tags: 
   - 类型转换
 categories: 
-  - 前端
-  - JavaScript
+  - [前端, JavaScript]
 cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/js-again.jpeg
 ---
 # 类型转换

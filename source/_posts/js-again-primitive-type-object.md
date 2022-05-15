@@ -4,8 +4,7 @@ date: 2022-05-06 19:46:33
 tags: 
   - 数据类型
 categories: 
-	- 前端
-  - JavaScript
+  - [前端, JavaScript]
 cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/js-again.jpeg
 ---
 # object

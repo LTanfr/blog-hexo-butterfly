@@ -5,8 +5,7 @@ updated:
 tags: 
   - RxJS
 categories: 
-  - 前端
-  - RxJS
+  - [前端, RxJS]
 keywords:
 description:
 top_img:

@@ -5,8 +5,7 @@ updated:
 tags: 
 	- 数据类型
 categories: 
-	- 前端
-  - JavaScript
+  - [前端, JavaScript]
 keywords:
 description:
 top_img:
