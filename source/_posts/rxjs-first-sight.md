@@ -10,7 +10,7 @@ categories:
 keywords:
 description:
 top_img:
-cover: /img/rxjs-first-sight.jpeg
+cover: https://cdn.jsdelivr.net/gh/ltanfr/ltanfr.github.io/img/rxjs-first-sight.jpeg
 toc:
 toc_number:
 toc_style_simple:
