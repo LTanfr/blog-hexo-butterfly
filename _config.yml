@@ -108,7 +108,7 @@ douban:
   builtin: false
   book:
     title: '书堆'
-    quote: '长眠于乞力马扎罗的豹子，自杀的海明威'
+    quote: '长眠于乞力马扎罗的豹，自杀的海明威'
     meta: true
     comments: true
     top_img:
@@ -135,7 +135,7 @@ bangumi:
   path:
   vmid: 75397250
   title: '番剧'
-  quote: '比起电锯人，更喜欢炎拳，大概就是这样'
+  quote: '比起电锯人，更喜欢炎拳'
   show: 2
   loading:
   metaColor:
