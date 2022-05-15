@@ -834,9 +834,9 @@ css_prefix: true
 inject:
   head:
     # footer heartbeats
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"  media="defer" onload="this.media='all'">
     # 星空背景
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/universe.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/universe.css"  media="defer" onload="this.media='all'">
   bottom:
     # 星空背景
     - <canvas id="universe"></canvas>
