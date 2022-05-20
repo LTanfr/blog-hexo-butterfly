@@ -108,7 +108,7 @@ douban:
   builtin: false
   book:
     title: '书堆'
-    quote: '长眠于乞力马扎罗的豹，自杀的海明威'
+    quote: ''
     meta: true
     comments: true
     top_img:

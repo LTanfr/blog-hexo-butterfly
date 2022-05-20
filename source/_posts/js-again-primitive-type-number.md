@@ -25,7 +25,7 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-## 原始类型(primitive values)
+# 原始类型(primitive values)
 
 原始类型一共有七种：`number`、`string`、`boolean`、`undefined`、`null`、`bigInt`、`symbol`。
 
@@ -263,11 +263,6 @@ parseInt('3', 2) // NaN
   - 如果字符串中包含其他字符，则直接返回`NaN`，注意就算是像`'12a'`这样的值也会返回`NaN`，这点与`parseInt`方法中解析规则直到读取到非数字为止不同。
 
 这里已经涉及到**隐式类型转换**，具体的会在之后详细地解释。
-
-## 常见面试题
-
-1. `0.1 + 0.2 !== 0.3`的原因（考察 JavaScript 中数字的存储）
-2. `['1','2','3'].map(parseInt)`的输出结果（考察`map`、`parseInt`方法以及函数式编程中管道的概念）
 
 ## 参考资料
 

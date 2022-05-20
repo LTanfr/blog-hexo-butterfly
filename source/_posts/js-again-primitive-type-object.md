@@ -196,55 +196,6 @@ function isEqual(obj1, obj2) {
 
 对象中的方法分为实例方法与静态方法，其中方法非常多，常用的实例方法有`Object.prototype.hasOwnProperty()`、`Object.prototype.toString()`、`Object.prototype.valueOf()`等，常用的静态方法有`Object.defineProperty()`、`Object.assign()`、`Object.keys()`等，许多方法的使用都是建立在对对象有一定了解的基础之上，会在之后结合具体场景一个个慢慢提到，这里不详细描述。
 
-# 常见面试题
-
-下列哪种访问对象属性的方式是不正确的（对象属性的访问方式）
-
-```js
-const bird = {
-  size: "small"
-};
-
-const mouse = {
-  name: "Mickey",
-  small: true
-};
-```
-
-- A: `mouse.bird.size`
-- B: `mouse[bird.size]`
-- C: `mouse[bird["size"]]`
-- D: All of them are valid
-
-代码输出结果(引用类型的存储方式、浅拷贝与深拷贝)
-
-```js
-let obj1 = {a: 100}
-let obj2 = obj1
-obj1.a = 200
-console.log(obj2.a)
-```
-
-代码输出结果(包装对象、类型转换)
-
-```js
-const a = 100;
-const b = new Number(100)
-console.log(a==b)
-console.log(a===b)
-```
-
-下列代码是否会报错(对象子类型)
-
-```js
-function test() {
-	console.log('test!')
-}
-
-test.a = 100
-```
-
-手写深拷贝、对象比较
 
 # 参考资料
 

@@ -470,34 +470,6 @@ undefined == undefined // true
 'true' == true // false
 ```
 
-# 常见面试题
-
-1. 实现`a == 1 && a == 2 && a == 3`的结果为`true`（宽松相等发生类型转换，重写`valueOf`方法实现）
-    
-    > 实现`a === 1 && a === 2 && a === 3`的结果为`true`（严格相等不会发生类型转换，需要借助`Object.defineProperty`来实现数据劫持）
-    > 
-    
-    ```js
-    let value = 1;
-    Object.defineProperty(window, 'a', {
-        get() {
-            return value++;
-        }
-    })
-    a === 1 && a === 2 && a === 3 // true
-    ```
-    
-2. `[] == ![]`（宽松相等隐式类型转换规则）
-3. `[] + {}`与`{} + []`（隐式类型转换）
-    
-    > 猜猜 `{} + {}` 的结果
-    >
-    ```js
-    // 这是特殊情况，推测是v8引擎作出的优化
-    // chrome 与 nodejs 返回 '[object Object][object Object]'
-    // firefox 返回 NaN
-    {} + {} // '[object Object][object Object]'
-    ```
 
 # 参考资料
 
