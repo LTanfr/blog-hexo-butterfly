@@ -834,7 +834,7 @@ css_prefix: true
 inject:
   head:
     # jsdelivr auto fallback
-    - <script defer src="./themes/butterfly/source/js/jsdelivr-auto-fallback.js"></script>
+    # - <script defer src="./themes/butterfly/source/js/jsdelivr-auto-fallback.js"></script>
     # footer heartbeats
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"  media="defer" onload="this.media='all'">
     # 星空背景
