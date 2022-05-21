@@ -30,7 +30,7 @@ aside:
 
 本文翻译自博文 **[Build your own React](https://pomb.us/build-your-own-react/)** ，原作者为 [Rodrigo Pombo](https://pomb.us/)，已获得作者授权。
 
-# 第零步：JSX to JS
+# 第零步：回顾 JSX to JS
 
 首先我们先通过以下三行代码来回顾一些 `React` 中的基本概念。
 
