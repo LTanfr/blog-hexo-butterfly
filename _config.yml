@@ -146,8 +146,8 @@ bangumi:
 live2d:
   enable: true # 是否启动
   scriptFrom: local # 默认
-  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
-  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginRootPath: / # 插件在站点上的根目录(相对路径)
+  pluginJsPath: / # 脚本文件相对与插件根目录路径
   pluginModelPath: assets/ # 模型文件相对与插件根目录路径
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
