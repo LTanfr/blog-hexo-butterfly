@@ -11,7 +11,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/build-your-own-react.jpg
+cover: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/build-your-own-react.jpg
 toc:
 toc_number:
 toc_style_simple:
@@ -602,7 +602,7 @@ Didact.render(
 
 对应的`fiber tree`就长下面这个样子。
 
-![fiber-tree.png](https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/fiber-tree.png)
+![fiber-tree.png](https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/fiber-tree.png)
 
 在`render`方法中，我们先创建`root fiber`并把它作为第一个任务单元，即第一个`nextUnitOfWork`。其余的任务会在`performUnitOfWork`这个方法中去处理。对于每个`fiber`我们需要在`performUnitOfWork`这个方法中做三件事情：
 

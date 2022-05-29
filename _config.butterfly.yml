@@ -91,10 +91,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
+index_img: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
+default_top_img: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/bg.JPG
 
 # The banner image of archive page
 archive_img:
@@ -127,7 +127,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -836,13 +836,13 @@ inject:
     # jsdelivr auto fallback
     # - <script defer src="./themes/butterfly/source/js/jsdelivr-auto-fallback.js"></script>
     # footer heartbeats
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"  media="defer" onload="this.media='all'">
     # 星空背景
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/universe.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/universe.css"  media="defer" onload="this.media='all'">
   bottom:
     # 星空背景
     - <canvas id="universe"></canvas>
-    - <script defer src="https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/universe.js"></script>
+    - <script defer src="https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/universe.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -857,9 +857,9 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
   option:
-    main_css: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/index.css
-    main: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/main.js
-    utils: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/utils.js
+    main_css: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/css/index.css
+    main: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/main.js
+    utils: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/js/utils.js
     # translate:
     # local_search:
     # algolia_js:

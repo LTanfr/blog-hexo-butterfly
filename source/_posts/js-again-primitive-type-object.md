@@ -5,7 +5,7 @@ tags:
   - 数据类型
 categories: 
   - [前端, JavaScript]
-cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/js-again.jpeg
+cover: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/js-again.jpeg
 ---
 # object
 

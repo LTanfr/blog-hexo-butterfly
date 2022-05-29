@@ -9,7 +9,7 @@ categories:
 keywords:
 description:
 top_img:
-cover: https://cdn.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/rxjs-first-sight.jpeg
+cover: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/img/rxjs-first-sight.jpeg
 toc:
 toc_number:
 toc_style_simple:
