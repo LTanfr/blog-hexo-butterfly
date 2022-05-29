@@ -10,10 +10,10 @@
     "go": "hexo clean && hexo bangumi -u && hexo g && hexo douban && hexo deploy "
   },
   "hexo": {
-    "version": "5.4.2"
+    "version": "6.0.0"
   },
   "dependencies": {
-    "hexo": "^6.2.0",
+    "hexo": "^6.0.0",
     "hexo-bilibili-bangumi": "^1.7.8",
     "hexo-butterfly-douban": "^1.2.5",
     "hexo-deployer-git": "^3.0.0",
