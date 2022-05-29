@@ -145,14 +145,14 @@ bangumi:
 # LIVE2D
 live2d:
   enable: true # 是否启动
-  scriptFrom: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/live2dw/lib/L2Dwidget.min.js # 设置 cdn
+  scriptFrom: https://fastly.jsdelivr.net/gh/ltanfr/blog-hexo-butterfly@gh-pages/live2dw/lib/L2Dwidget.min.js
   pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
   pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
-  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  pluginModelPath: / # 模型文件相对与插件根目录路径
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: ./source/live2d_models/live2d-widget-model-hijiki ## 模型文件
+    use: ./live2d_models/live2d-widget-model-hijiki ## 模型文件
   display:
     position: left # 定位方向 left right top bottom
     width: 150 # 小人宽度
